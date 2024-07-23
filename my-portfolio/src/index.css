@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+
+/* Color variables */
+:root {
+  --dark-blue: #2c3e50;
+  --light-gray: #f5f5f5;
+  --dark-gray: #333;
+  --accent: #6EACDA;
+}
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Basic styling for the application */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+/* Styling for a scrolled header */
+header.scrolled {
+  background-color: var(--dark-gray);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for the default header */
+header.default {
+  background-color: transparent;
+  color: var(--dark-gray);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container styling */
+.container {
+  position: relative; /* Ensure it stacks correctly with z-index */
+  z-index: 1; /* Higher than particles */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Custom styles for the Certificates section */
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+
+.bg-gray-100 {
+  background-color: #f7f7f7;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+/* Kelas untuk tema terang */
+.bg-light-theme {
+    background: #ffffff; /* Default untuk tema terang, bisa diubah */
+  }
+  
+  /* Kelas untuk tema gelap */
+  .bg-dark-theme {
+    background: #0e0d0dd5; /* Default untuk tema gelap, bisa diubah */
+  }
+  
